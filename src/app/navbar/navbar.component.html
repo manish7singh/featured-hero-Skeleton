@@ -1,0 +1,28 @@
+<mat-toolbar color="grey">
+    <a routerLink="/homepage">
+      <img alt="Home" height="50" title="Home" width="150" src="assets/newt_logo.png">
+    </a>
+    <mat-icon class="hamburger" (click)="sidenav.toggle()">menu</mat-icon>
+  <span class="spacer"></span>
+  <span><a [routerLink]="['/login']"> Log Out</a></span>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" (backdropClick)="close('backdrop')" >
+    <mat-drawer #sidenav mode="side" (keydown.escape)="close('escape')" disableClose>
+        <nav align="center">
+          <br>
+          <h3>Menu</h3>
+          <mat-list>
+            <mat-list-item>
+              <a class="nav-link" routerLink="homepage">Home</a>
+            </mat-list-item>
+            <mat-list-item>
+              <a class="nav-link" routerLink="addcart">Add Product</a>
+            </mat-list-item>
+          </mat-list>
+        </nav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>

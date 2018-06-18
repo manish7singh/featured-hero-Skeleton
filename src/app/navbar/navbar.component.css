@@ -1,0 +1,27 @@
+.spacer {
+    flex: 1 1 auto;
+}
+  
+.example-container {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  
+.hamburger {
+    height: auto;
+    margin: 2px 0 3px 5xpx ;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    padding: 0 16px 0 0;
+    height: 50px;
+}
+
+.mat-drawer {
+    overflow-y: hidden;
+}
