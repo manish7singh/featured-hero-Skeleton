@@ -21,6 +21,9 @@ import { ProductListService } from './_services/productlist.service';
 import { AddWizardComponent } from './add-wizard/add-wizard.component';
 import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_directives';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
+import { SiblingComponent } from './sibling/sibling.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { AlertComponent } from './_directives';
     HomeComponent,
     AddCartComponent,
     AddWizardComponent,
-    RegisterComponent
+    RegisterComponent,
+    ParentComponent,
+    ChildComponent,
+    SiblingComponent
   ],
   imports: [
     BrowserModule,
